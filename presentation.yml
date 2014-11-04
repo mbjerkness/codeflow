@@ -7,62 +7,87 @@ slides:
     - The people in your neighborhood
     - Mike Bjerkness
     - Director of Engineering for Web Applications
-    - Used to be cool
-    - Mom refers to him as her "special little guy" to this day
-    - Paul J DeCoursey I
+    - Paul J DeCoursey
     - Principal Software Engineer for Web Applications
-    - Used to have a cool mustache
-    - Was a bicentennial baby
+    notes: I feel good, I feel great, I feel wonderful.
   - name: Git workflows
     type: list
     content:
-    - A git workflow is how software developers collaborate with git in a productive way
-    - They are important because managing the merging and deploying of code shouldn't be a job in and of itself
+    - What is this and why do I care?
+    - Git is a distributed collaboration tool
+    - A git workflow is how software developers use git to collaborate in a productive way
+    - Merging and deploying of code shouldn't be a job in and of itself
+    notes: Why did the chicken cross the road?
   - name: Some examples
     type: list
     content:
     - gitflow -- very robust great for versioned scheduled releases
     - github flow -- simplier great for continuous deployment
+    notes: gitflow is complex and can be confusing and code gets lost.
   - name: gitflow
     url: http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
-    type: procon_wlink
-    pros:
-      - supports forks and pull request
+    type: image
+    img_src: media/gitflow.png
+  - name: gitflow - pros
+    type: list
+    content:
+      - supports forks and pull requests
       - clear what the current "version" is
       - tracking what changes are in each "version" is easy
       - seems to fit well into good agile practices
-    cons:
+      - there is always an active development branch and a passive master branch
+  - name: gitflow - cons
+    type: list
+    content:
+      - there is always an active development branch and a passive master branch
       - loosely dependent on the idea that each sprint is marching towards a new "version"
       - tightly coulpled to the idea of releases with multiple features
   - name: github flow
-    type: procon_wlink
+    type: image
     url:
     - https://guides.github.com/introduction/flow/index.html
     - http://scottchacon.com/2011/08/31/github-flow.html
-    pros:
+    img_src: media/githubflow.png
+  - name: github flow - pros
+    type: list
+    content:
       - simple, one main branch that represents the project
       - features are done on branches and can be independently developed and tested
       - supports forks and pull request
       - tracking what changes are in each feature is easy
-    cons:
-      - easy for parallel features to diverge the base and become a nightmare for merging
-  - name: SPS codeflow - Overview
+  - name: github flow - cons
     type: list
     content:
-    - similar to github flow with one main branch
-    - instead of branches on the main project features are done on branches on a fork
+      - easy for parallel features to diverge from the base and become a nightmare for merging
+  - name: Super Team Happy Code Workflow
+    type: list
+    content:
+    - Introducing! Super Team Happy Code Workflow
+    - It's Super
+    - It's Team
+    - It's Happy
+    - It's Code
+    - It's Workflow
+    - It's Fun!
+  - name: Super Team Happy Code Workflow - Overview
+    type: list
+    content:
+    - Essentially github flow, but with some added guidelines
+    - developers should fork the projects and do all work on their forks
+    - main project should only have master branch
     - pull requests are built and can be deployed to test environments
-    - every deployable release has a version tag
-  - name: SPS codeflow - Versioning
+    - master branch commits are tagged with build id
+    - code that is deployed will be tagged in master of deployment date
+  - name: Super Team Happy Code Workflow - Versioning
     type: list
     content:
-    - versions are similar to semvar, but date based.
-    - YYYYMMDD.HHMMSS-[pull-<PR#>]<branch> (utc time)
+    - YYYYMMDD.HHMMSS[-pull-<PR#>][-<branch>] (utc time)
     - Major version is the current utc date stamp
     - Minor version is the current hour, minute and seconds
     - If the build is of a branch then the branch is appendended
     - If the build is of a Pull Request, then pull-# is appending along with the branch
-  - name: Building and Deploying
+  - name: Build artifacts
     type: list
     content:
-    - ff
+    - Build artifacts should be built and submitted to an Ops approved artifact repository, such as Gemfury
+    - Dependent artifacts should be referenced by the exact build number
