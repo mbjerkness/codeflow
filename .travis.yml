@@ -6,7 +6,7 @@ script:
   - python build.py
 
 before_install:
-  - openssl aes-256-cbc -K $encrypted_678d53392411_key -iv $encrypted_678d53392411_iv -in id_rsa.enc -out id_rsa -d
+  - openssl aes-256-cbc -K $encrypted_0324a9605c84_key -iv $encrypted_0324a9605c84_iv -in id_rsa.enc -out id_rsa -d
 
 install:
   - "pip install -r requirements.txt"
