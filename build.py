@@ -14,7 +14,7 @@ def copy():
     sudo('chown mbjerkness /opt/local/codeflow')
     # our local 'testdirectory' - it may contain files or subdirectories ...
     put('index.html', '/opt/local/codeflow/')
-    put('assets', '/opt/local/codeflow/')
-    put('images', '/opt/local/codeflow/')
+    put('media', '/opt/local/codeflow/')
+    #put('images', '/opt/local/codeflow/')
 
 results = execute(copy)
