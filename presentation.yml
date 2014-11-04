@@ -1,0 +1,68 @@
+title: Git Workflows
+subheading: Best Practices for SPS
+slides:
+  - name: Who are we
+    type: list
+    content:
+    - The people in your neighborhood
+    - Mike Bjerkness
+    - Director of Engineering for Web Applications
+    - Used to be cool
+    - Mom refers to him as her "special little guy" to this day
+    - Paul J DeCoursey I
+    - Principal Software Engineer for Web Applications
+    - Used to have a cool mustache
+    - Was a bicentennial baby
+  - name: Git workflows
+    type: list
+    content:
+    - A git workflow is how software developers collaborate with git in a productive way
+    - They are important because managing the merging and deploying of code shouldn't be a job in and of itself
+  - name: Some examples
+    type: list
+    content:
+    - gitflow -- very robust great for versioned scheduled releases
+    - github flow -- simplier great for continuous deployment
+  - name: gitflow
+    url: http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
+    type: procon_wlink
+    pros:
+      - supports forks and pull request
+      - clear what the current "version" is
+      - tracking what changes are in each "version" is easy
+      - seems to fit well into good agile practices
+    cons:
+      - loosely dependent on the idea that each sprint is marching towards a new "version"
+      - tightly coulpled to the idea of releases with multiple features
+  - name: github flow
+    type: procon_wlink
+    url:
+    - https://guides.github.com/introduction/flow/index.html
+    - http://scottchacon.com/2011/08/31/github-flow.html
+    pros:
+      - simple, one main branch that represents the project
+      - features are done on branches and can be independently developed and tested
+      - supports forks and pull request
+      - tracking what changes are in each feature is easy
+    cons:
+      - easy for parallel features to diverge the base and become a nightmare for merging
+  - name: SPS codeflow - Overview
+    type: list
+    content:
+    - similar to github flow with one main branch
+    - instead of branches on the main project features are done on branches on a fork
+    - pull requests are built and can be deployed to test environments
+    - every deployable release has a version tag
+  - name: SPS codeflow - Versioning
+    type: list
+    content:
+    - versions are similar to semvar, but date based.
+    - YYYYMMDD.HHMMSS-[pull-<PR#>]<branch> (utc time)
+    - Major version is the current utc date stamp
+    - Minor version is the current hour, minute and seconds
+    - If the build is of a branch then the branch is appendended
+    - If the build is of a Pull Request, then pull-# is appending along with the branch
+  - name: Building and Deploying
+    type: list
+    content:
+    - ff
