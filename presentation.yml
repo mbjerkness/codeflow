@@ -133,6 +133,10 @@ slides:
     - Build artifacts should be built and submitted to an Ops approved artifact repository, such as Gemfury
     - Dependent artifacts should be referenced by the exact build number
     - Simple and precise definition of builds
+    - Configurations:
+      - Should not be in the build artifact
+      - Should be in environment specific artifacts
+      - If default configs exist in builds they should default to a broken state
   - name: fin
     type: image
     img_src: media/fin.jpg
