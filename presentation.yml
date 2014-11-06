@@ -59,17 +59,9 @@ slides:
     type: list
     content:
       - easy for parallel features to diverge from the base and become a nightmare for merging
-  - name: Super Team Happy Code Workflow
-    type: list
-    content:
-    - Introducing! Super Team Happy Code Workflow
-    - It's Super
-    - It's Team
-    - It's Happy
-    - It's Code
-    - It's Workflow
-    - It's Fun!
-  - name: Super Team Happy Code Workflow - Overview
+      - practically perfect in everyway
+      - <img src="media/cheeky-mary-poppins.gif" />
+  - name: SPS CodeFlow - Overview
     type: list
     content:
     - Essentially github flow, but with some added guidelines
@@ -78,7 +70,15 @@ slides:
     - pull requests are built and can be deployed to test environments
     - master branch commits are tagged with build id
     - code that is deployed will be tagged in master of deployment date
-  - name: Super Team Happy Code Workflow - Versioning
+  - name: SPS CodeFlow - Pull requests
+    type: list
+    content:
+    - All code changes need to go through a pull request
+    - Everyone reviews the code
+    - Everyone is equal and all ideas and concerns shared
+    - Discussions need to be constructive
+    - Sign-off from key team members required for merge (teams should decide what that means for their team)
+  - name: SPS CodeFlow - Versioning
     type: list
     content:
     - YYYYMMDD.HHMMSS[-pull-<PR#>][-<branch>] (utc time)

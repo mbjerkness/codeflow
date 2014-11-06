@@ -59,7 +59,11 @@
 						{% endif %}
 						<ul style="text-align: left;">
 						{% for line in slide.content %}
+						{% if line.startswith("<img") %}
+						<p class="fragment roll-in">{{ line }}</p>
+						{% else %}
 						<li class="fragment roll-in">{{ line }}</li>
+						{% endif %}
 						{% endfor %}
 						</ul>
 					{% endif %}
