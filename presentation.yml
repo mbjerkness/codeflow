@@ -17,12 +17,20 @@ slides:
     - Git is a distributed collaboration tool
     - A git workflow is how software developers use git to collaborate in a productive way
     - Merging and deploying of code shouldn't be a job in and of itself
+    - We need consistency in our usage of git
+    - Using the same workflow across teams and projects will help:
+      - on-boarding
+      - ops
+      - development resources moving between teams
+      - communication across teams
     notes: Why did the chicken cross the road?
   - name: Some examples
     type: list
     content:
     - gitflow -- very robust great for versioned scheduled releases
     - github flow -- simplier great for continuous deployment
+    - centralized workflow -- commit directly to master
+    - feature branch workflow -- branch off master, do your work, merge to master
     notes: gitflow is complex and can be confusing and code gets lost.
   - name: gitflow
     url: http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
@@ -91,3 +99,4 @@ slides:
     content:
     - Build artifacts should be built and submitted to an Ops approved artifact repository, such as Gemfury
     - Dependent artifacts should be referenced by the exact build number
+    - Simple and precise definition of builds
