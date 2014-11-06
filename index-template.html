@@ -86,7 +86,9 @@
 
 					{% if slide.type == "code" %}
 						<pre><code>
-						{% for line in slide.content %}{{ line }}{% endfor %}
+						{% for line in slide.content %}
+						{{ line }}
+						{% endfor %}
 						</code></pre>
 					{% endif %}
 

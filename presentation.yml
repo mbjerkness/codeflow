@@ -33,12 +33,19 @@ slides:
       - github flow -- simplier great for continuous deployment
     notes: gitflow is complex and can be confusing and code gets lost.
   - name: centralized workflow
+    type: image
+    img_src: media/apes.jpg
+  - name: centralized workflow
     type: list
     content:
       - does not scale well with larger teams
       - no forks
+      - code reviews are not built in
       - wild, wild west
       - <img src="media/git-centralized.png" />
+  - name: feature branch workflow
+    type: image
+    img_src: media/carcrash.jpg
   - name: feature branch workflow
     type: list
     content:
@@ -64,6 +71,7 @@ slides:
       - there is always an active development branch and a passive master branch
       - loosely dependent on the idea that each sprint is marching towards a new "version"
       - tightly coulpled to the idea of releases with multiple features
+      - <img src="media/in-the-weeds-300x198.jpg" />
   - name: github flow
     type: image
     url:
