@@ -120,6 +120,7 @@ slides:
   - name: SPS CodeFlow - Versioning
     type: code
     content:
+      - --extra-index-url https://repo.fury.io/NqvNFCysuFzM847zBn88/spscommerce/
       - pyweb-core==20141106.102432
       - Django==1.6.2
       - logstash-formatter==0.5.8
