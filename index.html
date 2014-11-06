@@ -48,399 +48,513 @@
 					<h3>Best Practices for SPS</h3>
 				</section>
 
-				
+
 				<section data-transition="zoom">
 					<h3>Who are we</h3>
 
-					
-						
-						<ul style="text-align: left;">
-						
-						
-						<li class="fragment roll-in">The people in your neighborhood</li>
-						
-						
-						
-						<li class="fragment roll-in">Mike Bjerkness</li>
-						
-						
-						
-						<li class="fragment roll-in">Director of Engineering for Web Applications</li>
-						
-						
-						
-						<li class="fragment roll-in">Paul J DeCoursey</li>
-						
-						
-						
-						<li class="fragment roll-in">Principal Software Engineer for Web Applications</li>
-						
-						
-						</ul>
-					
 
-					
+
+						<ul style="text-align: left;">
+
+
+						<li class="fragment roll-in">The people in your neighborhood</li>
+
+
+
+						<li class="fragment roll-in">Mike Bjerkness</li>
+
+
+
+						<li class="fragment roll-in">Director of Engineering for Web Applications</li>
+
+
+
+						<li class="fragment roll-in">Paul J DeCoursey</li>
+
+
+
+						<li class="fragment roll-in">Principal Software Engineer for Web Applications</li>
+
+
+						</ul>
+
+
+
+
+
 
 				</section>
-				
+
 				<section data-transition="zoom">
 					<h3>Git workflows</h3>
 
-					
-						
+
+
 						<ul style="text-align: left;">
-						
-						
+
+
 						<li class="fragment roll-in">What is this and why do I care?</li>
-						
-						
-						
+
+
+
 						<li class="fragment roll-in">Git is a distributed collaboration tool</li>
-						
-						
-						
+
+
+
 						<li class="fragment roll-in">A git workflow is how software developers use git to collaborate in a productive way</li>
-						
-						
-						
+
+
+
 						<li class="fragment roll-in">Merging and deploying of code shouldn't be a job in and of itself</li>
-						
-						
-						
+
+
+
 						<li class="fragment roll-in">We need consistency in our usage of git</li>
-						
-						
-						
-						
+
+
+
+
 							<li class="fragment roll-in">Using the same workflow across teams and projects will help
 								<ul>
-									
+
 									<li class="fragment roll-in">on-boarding</li>
-									
+
 									<li class="fragment roll-in">ops</li>
-									
+
 									<li class="fragment roll-in">development resources moving between teams</li>
-									
+
 									<li class="fragment roll-in">communication across teams</li>
-									
+
 								</ul>
 							</li>
-						
-						
-						
-						</ul>
-					
 
-					
+
+
+						</ul>
+
+
+
+
+
 
 				</section>
-				
+
 				<section data-transition="zoom">
 					<h3>Some examples</h3>
 
-					
-						
-						<ul style="text-align: left;">
-						
-						
-						<li class="fragment roll-in">gitflow -- very robust great for versioned scheduled releases</li>
-						
-						
-						
-						<li class="fragment roll-in">github flow -- simplier great for continuous deployment</li>
-						
-						
-						
-						<li class="fragment roll-in">centralized workflow -- commit directly to master</li>
-						
-						
-						
-						<li class="fragment roll-in">feature branch workflow -- branch off master, do your work, merge to master</li>
-						
-						
-						</ul>
-					
 
-					
+
+						<ul style="text-align: left;">
+
+
+						<li class="fragment roll-in">centralized workflow -- commit directly to master</li>
+
+
+
+						<li class="fragment roll-in">feature branch workflow -- branch off master, do your work, merge to master</li>
+
+
+
+						<li class="fragment roll-in">gitflow -- very robust great for versioned scheduled releases</li>
+
+
+
+						<li class="fragment roll-in">github flow -- simplier great for continuous deployment</li>
+
+
+						</ul>
+
+
+
+
+
 
 				</section>
-				
+
+				<section data-transition="zoom">
+					<h3>centralized workflow</h3>
+
+
+
+						<ul style="text-align: left;">
+
+
+						<li class="fragment roll-in">does not scale well with larger teams</li>
+
+
+
+						<li class="fragment roll-in">no forks</li>
+
+
+
+						<li class="fragment roll-in">wild, wild west</li>
+
+
+
+						<p class="fragment roll-in"><img src="media/git-centralized.png" /></p>
+
+
+						</ul>
+
+
+
+
+
+
+				</section>
+
+				<section data-transition="zoom">
+					<h3>feature branch workflow</h3>
+
+
+
+						<ul style="text-align: left;">
+
+
+						<li class="fragment roll-in">feature branches can get out of date with master</li>
+
+
+
+						<li class="fragment roll-in">as teams grow integrations can become unruly</li>
+
+
+
+						<li class="fragment roll-in">no forks!</li>
+
+
+
+						<p class="fragment roll-in"><img src="media/git-branching.png" /></p>
+
+
+						</ul>
+
+
+
+
+
+
+				</section>
+
 				<section data-transition="zoom">
 					<h3>gitflow</h3>
 
-					
 
-					
-						
+
+
+
 						<p class="fragment fade-in">[http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/]</p>
-						
+
 						<img src="media/gitflow.png" class="fragment zoom-in" />
-					
+
+
+
 
 				</section>
-				
+
 				<section data-transition="zoom">
 					<h3>gitflow - pros</h3>
 
-					
-						
-						<ul style="text-align: left;">
-						
-						
-						<li class="fragment roll-in">supports forks and pull requests</li>
-						
-						
-						
-						<li class="fragment roll-in">clear what the current "version" is</li>
-						
-						
-						
-						<li class="fragment roll-in">tracking what changes are in each "version" is easy</li>
-						
-						
-						
-						<li class="fragment roll-in">seems to fit well into good agile practices</li>
-						
-						
-						
-						<li class="fragment roll-in">there is always an active development branch and a passive master branch</li>
-						
-						
-						</ul>
-					
 
-					
+
+						<ul style="text-align: left;">
+
+
+						<li class="fragment roll-in">supports forks and pull requests</li>
+
+
+
+						<li class="fragment roll-in">clear what the current "version" is</li>
+
+
+
+						<li class="fragment roll-in">tracking what changes are in each "version" is easy</li>
+
+
+
+						<li class="fragment roll-in">seems to fit well into good agile practices</li>
+
+
+
+						<li class="fragment roll-in">there is always an active development branch and a passive master branch</li>
+
+
+						</ul>
+
+
+
+
+
 
 				</section>
-				
+
 				<section data-transition="zoom">
 					<h3>gitflow - cons</h3>
 
-					
-						
-						<ul style="text-align: left;">
-						
-						
-						<li class="fragment roll-in">there is always an active development branch and a passive master branch</li>
-						
-						
-						
-						<li class="fragment roll-in">loosely dependent on the idea that each sprint is marching towards a new "version"</li>
-						
-						
-						
-						<li class="fragment roll-in">tightly coulpled to the idea of releases with multiple features</li>
-						
-						
-						</ul>
-					
 
-					
+
+						<ul style="text-align: left;">
+
+
+						<li class="fragment roll-in">there is always an active development branch and a passive master branch</li>
+
+
+
+						<li class="fragment roll-in">loosely dependent on the idea that each sprint is marching towards a new "version"</li>
+
+
+
+						<li class="fragment roll-in">tightly coulpled to the idea of releases with multiple features</li>
+
+
+						</ul>
+
+
+
+
+
 
 				</section>
-				
+
 				<section data-transition="zoom">
 					<h3>github flow</h3>
 
-					
 
-					
-						
+
+
+
 						<p class="fragment fade-in">[['https://guides.github.com/introduction/flow/index.html', 'http://scottchacon.com/2011/08/31/github-flow.html']]</p>
-						
+
 						<img src="media/githubflow.png" class="fragment zoom-in" />
-					
+
+
+
 
 				</section>
-				
+
 				<section data-transition="zoom">
 					<h3>github flow - pros</h3>
 
-					
-						
-						<ul style="text-align: left;">
-						
-						
-						<li class="fragment roll-in">simple, one main branch that represents the project</li>
-						
-						
-						
-						<li class="fragment roll-in">features are done on branches and can be independently developed and tested</li>
-						
-						
-						
-						<li class="fragment roll-in">supports forks and pull request</li>
-						
-						
-						
-						<li class="fragment roll-in">tracking what changes are in each feature is easy</li>
-						
-						
-						</ul>
-					
 
-					
+
+						<ul style="text-align: left;">
+
+
+						<li class="fragment roll-in">simple, one main branch that represents the project</li>
+
+
+
+						<li class="fragment roll-in">features are done on branches and can be independently developed and tested</li>
+
+
+
+						<li class="fragment roll-in">supports forks and pull request</li>
+
+
+
+						<li class="fragment roll-in">tracking what changes are in each feature is easy</li>
+
+
+						</ul>
+
+
+
+
+
 
 				</section>
-				
+
 				<section data-transition="zoom">
 					<h3>github flow - cons</h3>
 
-					
-						
-						<ul style="text-align: left;">
-						
-						
-						<li class="fragment roll-in">easy for parallel features to diverge from the base and become a nightmare for merging</li>
-						
-						
-						
-						<li class="fragment roll-in">practically perfect in everyway</li>
-						
-						
-						
-						<p class="fragment roll-in"><img src="media/cheeky-mary-poppins.gif" /></p>
-						
-						
-						</ul>
-					
 
-					
+
+						<ul style="text-align: left;">
+
+
+						<li class="fragment roll-in">easy for parallel features to diverge from the base and become a nightmare for merging</li>
+
+
+
+						<li class="fragment roll-in">practically perfect in everyway</li>
+
+
+
+						<p class="fragment roll-in"><img src="media/cheeky-mary-poppins.gif" /></p>
+
+
+						</ul>
+
+
+
+
+
 
 				</section>
-				
+
 				<section data-transition="zoom">
 					<h3>SPS CodeFlow - Overview</h3>
 
-					
-						
-						<ul style="text-align: left;">
-						
-						
-						<li class="fragment roll-in">Essentially github flow, but with some added guidelines</li>
-						
-						
-						
-						<li class="fragment roll-in">developers should fork the projects and do all work on their forks</li>
-						
-						
-						
-						<li class="fragment roll-in">main project should only have master branch</li>
-						
-						
-						
-						<li class="fragment roll-in">pull requests are built and can be deployed to test environments</li>
-						
-						
-						
-						<li class="fragment roll-in">master branch commits are tagged with build id</li>
-						
-						
-						
-						<li class="fragment roll-in">code that is deployed will be tagged in master of deployment date</li>
-						
-						
-						</ul>
-					
 
-					
+
+						<ul style="text-align: left;">
+
+
+						<li class="fragment roll-in">Essentially github flow, but with some added guidelines</li>
+
+
+
+						<li class="fragment roll-in">developers should fork the projects and do all work on their forks</li>
+
+
+
+						<li class="fragment roll-in">main project should only have master branch</li>
+
+
+
+						<li class="fragment roll-in">pull requests are built and can be deployed to test environments</li>
+
+
+
+						<li class="fragment roll-in">master branch commits are tagged with build id</li>
+
+
+
+						<li class="fragment roll-in">code that is deployed will be tagged in master of deployment date</li>
+
+
+						</ul>
+
+
+
+
+
 
 				</section>
-				
+
 				<section data-transition="zoom">
 					<h3>SPS CodeFlow - Pull requests</h3>
 
-					
-						
-						<ul style="text-align: left;">
-						
-						
-						<li class="fragment roll-in">All code changes need to go through a pull request</li>
-						
-						
-						
-						<li class="fragment roll-in">Everyone reviews the code</li>
-						
-						
-						
-						<li class="fragment roll-in">Everyone is equal and all ideas and concerns shared</li>
-						
-						
-						
-						<li class="fragment roll-in">Discussions need to be constructive</li>
-						
-						
-						
-						<li class="fragment roll-in">Sign-off from key team members required for merge (teams should decide what that means for their team)</li>
-						
-						
-						</ul>
-					
 
-					
+
+						<ul style="text-align: left;">
+
+
+						<li class="fragment roll-in">All code changes need to go through a pull request</li>
+
+
+
+						<li class="fragment roll-in">Everyone reviews the code</li>
+
+
+
+						<p class="fragment roll-in"><img src="media/code_review.jpg" height="300" /></p>
+
+
+
+						<li class="fragment roll-in">Everyone is equal and all ideas and concerns shared</li>
+
+
+
+						<li class="fragment roll-in">Discussions need to be constructive</li>
+
+
+
+						<li class="fragment roll-in">Sign-off from key team members required for merge (teams should decide what that means for their team)</li>
+
+
+						</ul>
+
+
+
+
+
 
 				</section>
-				
+
 				<section data-transition="zoom">
 					<h3>SPS CodeFlow - Versioning</h3>
 
-					
-						
-						<ul style="text-align: left;">
-						
-						
-						<li class="fragment roll-in">YYYYMMDD.HHMMSS[-pull-<PR#>][-<branch>] (utc time)</li>
-						
-						
-						
-						<li class="fragment roll-in">Major version is the current utc date stamp</li>
-						
-						
-						
-						<li class="fragment roll-in">Minor version is the current hour, minute and seconds</li>
-						
-						
-						
-						<li class="fragment roll-in">If the build is of a branch then the branch is appendended</li>
-						
-						
-						
-						<li class="fragment roll-in">If the build is of a Pull Request, then pull-# is appending along with the branch</li>
-						
-						
-						</ul>
-					
 
-					
+
+						<ul style="text-align: left;">
+
+
+						<li class="fragment roll-in">YYYYMMDD.HHMMSS[-pull-<PR#>][-<branch>] (utc time)</li>
+
+
+
+						<li class="fragment roll-in">Major version is the current utc date stamp</li>
+
+
+
+						<li class="fragment roll-in">Minor version is the current hour, minute and seconds</li>
+
+
+
+						<li class="fragment roll-in">If the build is of a branch then the branch is appendended</li>
+
+
+
+						<li class="fragment roll-in">If the build is of a Pull Request, then pull-# is appending along with the branch</li>
+
+
+						</ul>
+
+
+
+
+
 
 				</section>
-				
+
+				<section data-transition="zoom">
+					<h3>SPS CodeFlow - Versioning</h3>
+
+
+
+
+
+
+<pre><code>pyweb-core==20141106.102432
+Django==1.6.2
+logstash-formatter==0.5.8
+redis==2.9.1
+passlib==1.6.2
+pycrypto==2.6.1
+django-cors-headers==0.12
+</code></pre>
+
+
+				</section>
+
 				<section data-transition="zoom">
 					<h3>Build artifacts</h3>
 
-					
-						
-						<ul style="text-align: left;">
-						
-						
-						<li class="fragment roll-in">Build artifacts should be built and submitted to an Ops approved artifact repository, such as Gemfury</li>
-						
-						
-						
-						<li class="fragment roll-in">Dependent artifacts should be referenced by the exact build number</li>
-						
-						
-						
-						<li class="fragment roll-in">Simple and precise definition of builds</li>
-						
-						
-						</ul>
-					
 
-					
+
+						<ul style="text-align: left;">
+
+
+						<li class="fragment roll-in">Build artifacts should be built and submitted to an Ops approved artifact repository, such as Gemfury</li>
+
+
+
+						<li class="fragment roll-in">Dependent artifacts should be referenced by the exact build number</li>
+
+
+
+						<li class="fragment roll-in">Simple and precise definition of builds</li>
+
+
+						</ul>
+
+
+
+
+
 
 				</section>
-				
+
 
 				<section>
 					<h1>THE END</h1>

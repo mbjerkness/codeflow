@@ -84,6 +84,12 @@
 						<img src="{{ slide.img_src }}" class="fragment zoom-in" />
 					{% endif %}
 
+					{% if slide.type == "code" %}
+						<pre><code>
+						{% for line in slide.content %}{{ line }}{% endfor %}
+						</code></pre>
+					{% endif %}
+
 				</section>
 				{% endfor %}
 
