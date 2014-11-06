@@ -42,17 +42,16 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				
+
 				<section>
 					<h1>{{ title }}</h1>
 					<h3>{{ subheading }}</h3>
-					<p>BY Super Team Happy Code</p>
 				</section>
 
 				{% for slide in slides %}
 				<section data-transition="zoom">
 					<h3>{{ slide.name }}</h3>
-					
+
 					{% if slide.type == "list" %}
 						{% if slide.url %}
 						<p class="fragment fade-in">[{{ slide.url }}]</p>
