@@ -59,7 +59,17 @@
 						{% endif %}
 						<ul style="text-align: left;">
 						{% for line in slide.content %}
-						{% if line.startswith("<img") %}
+						{% if  isdict(line) %}
+						{% for key in line %}
+							<li class="fragment roll-in">{{ key }}
+								<ul>
+									{% for sub_item in line[key] %}
+									<li class="fragment roll-in">{{ sub_item }}</li>
+									{% endfor %}
+								</ul>
+							</li>
+						{% endfor %}
+						{% elif line.startswith("<img") %}
 						<p class="fragment roll-in">{{ line }}</p>
 						{% else %}
 						<li class="fragment roll-in">{{ line }}</li>
